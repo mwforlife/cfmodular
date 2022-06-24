@@ -5,93 +5,395 @@
 	<meta charset="utf-8">
 	<title>CF Contrucción Modular</title>
 	<meta name="author" content="Wilkens Tech">
-	<meta name="description" content="CF Contrucción Modular">
+	<meta name="description" content="Empresa de contrucción modulares, Fabricación, e instalación contrucciones Módulos. Instalaciones de Faenas, Oficinas, Bodegas, Comedores, Casas de Cambio, Baños. Comedores, Oficinas temporales. Baños y duchas temporales.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-----------------StyleSheet----------------------------->
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main__styles.css">
-	<link rel="icon" type="image/x-icon" href="img/logo/logo.png"/>
+     <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/libs.css"/>
+      <link rel="stylesheet" href="css/style.css"/>
+      
+      <!-------------Fonts-------------->
+      <link rel="preload" href="fonts/istok-web-v15-latin/istok-web-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="fonts/istok-web-v15-latin/istok-web-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="fonts/montserrat-v15-latin/montserrat-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="fonts/montserrat-v15-latin/montserrat-v15-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+      
+      <!-----------Material Items------------->
+      <link rel="preload" href="fonts/material-icons/material-icons.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="fonts/material-icons/material-icons-outlined.woff2" as="font" type="font/woff2" crossorigin>
+      
+      <!----------------Favicon----------->
+      <link rel="icon" type="image/x-icon" href="img/logo/logo.png"/>
 	<!--------------------------------------------------------->
+	
+	<style>
+        .contact__link{
+            box-shadow: 1px 1px 5px 2px;
+            border-radius: 50%;
+            border-bottom-left-radius: 0px;
+            padding: 0;
+            margin: 0;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index:999; 
+        }
+        .contact__link img{
+            margin: 0;
+            width: 100px
+        }
+        .contact__link:hover{
+            animation: girar 3s ease-out;
+        }
+        @keyframes girar{
+            from{
+                transform: rotate(0deg)
+            }
+            to{
+                transform: rotate(360deg)
+            }
+        }
+    </style>
 	
 </head>
 
-<body>
-	<header class="header">
-		
-			<div class="headertop">
-				<div class="container">
-					<div class="social">
-						<a href="#" class="social__link"><i class="fa-brands fa-facebook-f"></i></a>
-						<a href="#" class="social__link"><i class="fa-brands fa-instagram"></i></a>
-						<a href="#" class="social__link"><i class="fa-brands fa-whatsapp"></i></a>
-					</div>
-					<div class="contact">
-						<a href="#" class="contact__link"><i class="fa-solid fa-location-dot"></i> Santa Elena 712, Graneros Chile</a>
-						<a href="#" class="contact__link"><i class="fa-solid fa-phone"></i>+56900000000</a>
-					</div>
-				</div>
-			</div>
-			
-			<div class="headermenu">
-				<div class="container">
+<body id="top">
+<!-----Link Whatsapp------->
+	<a href="https://wa.me/56989292540?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio" target="_blank" class="contact__link">
+            <img src="img/logo/whatsapp.png" width="150" alt="">
+    </a>
+<!------------------------->
+<!--------Mobile Header-------->
+<main class="main">
+        <div class="main-inner">
+            <nav class="mmm">
+               <div class="mmm-content">
+                <ul class="mmm-list">
+                    <li><a href="#top">Inicio</a></li>
+                    <li><a href="#empresa">Empresa</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contactos</a></li>
+                </ul>
+               </div>
+            </nav>
+        </div>
+    
+<!-------------------------->
+<!------------Begin Header-------------->
+<header class="header">
+<!------------Begin Header-Top-------------->
+    <nav class="header-top">
+        <div class="container">
+            <div class="row align-items-center-justify-content-between">
+                <div class="col-auto">
+                   <!--------Header top Info----------->
+                    <ul class="header-top-info">
+                        <li>
+                            <a href="mailto:contacto@cfmodular.cl">
+                            <i class="material-icons md-18">mail_outline</i>
+                            <span>contacto@cfmodular.cl</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="tel:+56989292540" class="formingHrefTel">
+                            <i class="material-icons md-18">phone_in_talk</i>
+                            <span>+56989292540</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!----------------End header top info---------------->
+                </div>
+                
+            </div>
+        </div>
+    </nav><!---------End Header Top------------->
+    <nav class="header-fixed">
+        <div class="container">
+            <div class="row flex-nowrap align-items-center justify-content-between">
+                <div class="col-auto d-block d-lg-none header-fixed-col">
+                    <div class="main-mnu-btn">
+                        <span class="bar bar-1"></span>
+                        <span class="bar bar-2"></span>
+                        <span class="bar bar-3"></span>
+                        <span class="bar bar-4"></span>
+                    </div>
+                </div>
+                <div class="col-auto header-fixed-col">
+                    <!--------Begin logo--------->
+                    <a href="#" class="logo" title="CFModular">
+                        <img src="img/logo/logo.png" alt="CFMoudlar" width="350" height="350">
+                    </a><!------End Logo----------->
+                </div>
+                <div class="col-auto header-fixed-col d-none d-lg-block col-static">
+                    <!----------Begin Main Menu-------------->
+                    <nav class="main-mnu">
+                        <ul class="main-mnu-list">
+                            <li><a href="#top" data-title="Inicio"><span>Inicio</span></a></li>
+                            <li><a href="#empresa" data-title="Empresa"><span>Empresa</span></a></li>
+                            <li><a href="#servicios" data-title="Servicios"><span>Servicios</span></a></li>
+                            <li><a href="#contacto" data-title="Contactos"><span>Contactos</span></a></li>
+                        </ul>
+                    </nav><!--------End Main Menu----------->
+                </div>
+                <div class="col-auto header-fixed-col col-static">
+                    <!-----------------begin Header Actions--------------------->
+                </div>
+            </div>
+        </div>
+    </nav><!-------End Header actions-------->
+</header><!-----------End Header-------------->
 
-					<div class="headermenu__logo">
-						<figure class="headermenu__logo--picture">
-							<img src="img/logo/logo.png" alt="CF Modular Logo" class="headermenu__logo--img">
-						</figure>
-					</div>
-					<div class="headermenu__nav">
-						<ul class="nav__items">
-							<li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Empresa</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Servicios</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-	</header>
-	
-	<main>
-		<div class="landing">
-			<div class="landing__content container">
-				<h3 class="landing__subtitle">Proveemos</h3>
-				<h1 class="landing__title">Servicio de Construcción Modular</h1>
-				<p class="landing__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolorem, sunt repellendus maiores consequuntur ratione possimus at quaerat libero consectetur pariatur animi similique, reprehenderit odio, sint perspiciatis impedit temporibus id?</p>
-				<a href="#" class="landing__button">Explorar</a>
-			</div>
-		</div>
-	</main>
-	
-	
-	
-	<footer>
-	    <a class="btn-whatsapp animate__animated animate__fadeInRight" target="_blank" href="https://wa.me/56945250440?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio">
-           <div class="btn-whatsapp-content ">
-                <div class="btn-whatsapp-text animate__animated animate__fadeInRight">
-						¿Necesitas ayuda?<br/>
-						¡Hablanos!
+<!--------Begin Intro--------->
+<div id="inicio" class="section-bgc-intro">
+    <div class="intro-slider" style="background-image: url(img/fondo/fondo3.jpeg); background-repeat: no-repeat; background-position: right;;">
+        <div class="intro-item" style="background-color: rgba(0, 0, 0, 0.1">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="intro-content">
+                            <div class="section-heading shm-none">
+                                <h1><img src="img/logo/logo__completo.png" alt=""></h1>
+                                <p class="section-desc">
+                                    Empresa de contrucción modulares, Fabricación, e instalación contrucciones Módulos. Instalaciones de Faenas, Oficinas, Bodegas, Comedores, Casas de Cambio, Baños. Comedores, Oficinas temporales. Baños y duchas temporales.
+                                </p>
+                            </div>
+                            <div class="wrap-btn intro-btns">
+                                <a href="#" class="btn btn-with-icon btn-small ripple">
+                                    <span>Contactanos</span>
+                                    <svg class="btn-icon-right" viewBox="0 0 13 9" width="12" height="9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
+                                </a>
+                                <a href="#" class="btn btn-with-icon btn-border btn-small ripple">
+                                    <span>Explorar</span>
+                                    <svg class="btn-icon-right" viewBox="0 0  13 9" width="12" height="9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div style="width: 64px; height: 64px; border-radius: 50%;
-                border: none;">
-                <img class="img-whatsapp" src="img/logo/whatsapp.png" width="64" height="64" alt="Whatsapp" >
+            </div>
+        </div>
+    </div>
+</div><!-----End Intro------>
+
+<!-- Begin Services--->
+<section id="servicios" class="section services">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading heading-center">
+                    <h2>Nuestros Servicios</h2>
                 </div>
-           </div>
-	    </a>
-	</footer>
+            </div>
+            <div class="col-lg-12 col-md-12 col-xl-12">
+                    <div class="service__item">
+                           <div class="service__text">
+                            <h2 class="service__title">Instalaciones de Faenas</h2>
+                            <h4 class="service__subtitle">Oficinas, Bodegas, Comedores, Casa de Cambio, Baños</h4>
+                           </div>
+                            <img src="img/servicios/Instalaciones%20de%20Faena-4.jpg" alt="" class="service__img">
+                    </div>
+                    
+                    
+                    <div class="service__item">
+                            <img src="img/servicios/Comedor-2.jpg" alt="" class="service__img">
+                           <div class="service__text">
+                            <h2 class="service__title">Comedores</h2>
+                            <h4 class="service__subtitle">Temporales</h4>
+                            <p class="service paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quibusdam, ea. Veniam, voluptatibus, expedita. Necessitatibus voluptatibus dolore beatae, possimus incidunt cum quis ipsa voluptates rerum, voluptas accusamus aliquam, qui blanditiis.</p>
+                           </div>
+                    </div>
+                    
+                    
+                    <div class="service__item">
+                           <div class="service__text">
+                            <h2 class="service__title">Oficinas</h2>
+                            <h4 class="service__subtitle">Temporales</h4>
+                            <p class="service paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quibusdam, ea. Veniam, voluptatibus, expedita. Necessitatibus voluptatibus dolore beatae, possimus incidunt cum quis ipsa voluptates rerum, voluptas accusamus aliquam, qui blanditiis.</p>
+                           </div>
+                            <img src="img/servicios/oficinas.jpg" alt="" class="service__img">
+                    </div>
+                    
+                    
+                    <div class="service__item">
+                            <img src="img/servicios/Instalaciones%20de%20Faena-5.jpg" alt="" class="service__img">
+                           <div class="service__text">
+                            <h2 class="service__title">Casas de Cambio</h2>
+                            <h4 class="service__subtitle">Temporales</h4>
+                            <p class="service paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quibusdam, ea. Veniam, voluptatibus, expedita. Necessitatibus voluptatibus dolore beatae, possimus incidunt cum quis ipsa voluptates rerum, voluptas accusamus aliquam, qui blanditiis.</p>
+                           </div>
+                    </div>
+                    
+                    
+                    <div class="service__item">
+                           <div class="service__text">
+                            <h2 class="service__title">Baños y Duchas</h2>
+                            <h4 class="service__subtitle">Temporales</h4>
+                            <p class="service paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quibusdam, ea. Veniam, voluptatibus, expedita. Necessitatibus voluptatibus dolore beatae, possimus incidunt cum quis ipsa voluptates rerum, voluptas accusamus aliquam, qui blanditiis.</p>
+                           </div>
+                            <img src="img/servicios/ba%C3%B1os.jpg" alt="" class="service__img">
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
+</section>
+<!-----------END Services---------------------->
+<!-----------Begin Contact---------------------->
+<section id="contacto" class="section contact">
+   <div class="wave-contact">
+       <img src="img/waves/wave-contact-top.svg" alt="">
+   </div>
+    <div class="container">
+        <div class="row">
+            <div style="margin-bottom: 50px;" class="col-12">
+                <div class="section-heading heading-center">
+                    <h2>Contactos</h2>
+                </div>
+            </div>
+            
+            <div class="contact__item">
+                <img src="img/Illustrations/email-us.svg" alt="" class="contact__img">
+                <div class="contact__form">
+                    <form action="">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="contact__title">Formulario de Contacto</h3>
+                                <p style="margin: 0;"><span class="text-danger">*</span>Campos Obligatorios</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="">Nombre:<span class="text-danger">*</span></label>
+                                <input type="text" name="nombre" required placeholder="Ingrese su nombre Completo" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="">Correo Electronico<span class="text-danger">*</span></label>
+                                <input type="email" name="email" required placeholder="Ingrese su Correo electronico" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Numero de Contacto<span class="text-danger">*</span></label>
+                                <input type="text" name="phone" required placeholder="Ingrese su Numero de Contacto" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Asunto</label>
+                                <input type="text" placeholder="Ingrese el Asunto de su mensaje" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="">Mensaje<span class="text-danger">*</span></label>
+                                <textarea name="" id="" cols="30" rows="10" maxlength="200" class="form-control"></textarea>
+                            </div>
+                            <div class="col-md-12 d-flex justify-content-end">
+                                <button class="btn btn-with-icon btn-small ripple">
+                                    <span>Contactanos</span>
+                                    <svg class="btn-icon-right" viewBox="0 0 13 9" width="12" height="9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wave-contact">
+       <img src="img/waves/wave-contact-bottom.svg" alt="">
+   </div>
+</section>
+<!----------End Contact----------------------->
+<footer class="footer">
+    <div class="footer-main">
+        <div class="container">
+        <div class="row items">
+            <div class="col-xl-3 col-lg-3 col-md-5 col-12 item">
+                <!-----------Begin Company Info--------------->
+                <div class="footer-company-info">
+                    <div class="footer-company-top">
+                        <a href="#top" class="logo" title="CFModular" alt="CFMOdular LOGO">
+                            <img src="img/logo/logo_blank.png" alt="CFModular Logo" class="lazy">
+                        </a>
+                        <div class="footer-company-dec">
+                            <p>
+                                Empresa de contrucción modulares, Fabricación, e instalación contrucciones Módulos. Instalaciones de Faenas, Oficinas, Bodegas, Comedores, Casas de Cambio, Baños. Comedores, Oficinas temporales. Baños y duchas temporales.
+                            </p>
+                        </div>
+                    </div>
+                </div><!----------------End Company Footer----------------------------->
+            </div>
+            <!-------------Menu Footer Begin------------------>
+            <div class="col-xl-2 offset-xl-1 col-md-3 col-5 col-lg-2 item">
+                <div class="footer-item">
+                    <p class="footer-item-heading">Menu</p>
+                    <nav class="footer-nav">
+                        <ul class="footer-mnu">
+                            <li><a href="#top" class="hover-link" data-title="Inicio"><span>Inicio</span></a></li>
+                            <li><a href="#empresa" class="hover-link" data-title="Empresa"><span>Empresa</span></a></li>
+                            <li><a href="#servicios" class="hover-link" data-title="Servicios"><span>Servicios</span></a></li>
+                            <li><a href="#contactos" class="hover-link" data-title="Contactos"><span>Contactos</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div><!---------------Menu Footer End------------------------>
+            <!------------¿Que ofrecemos? Begin----------------------------->
+            <div class="col-xl-2 offset-xl-1 col-md-3 col-5 col-lg-2 item">
+                <div class="footer-item">
+                    <p class="footer-item-heading">¿Que Ofrecemos?</p>
+                    <nav class="footer-nav">
+                        <ul class="footer-mnu">
+                            <li><a href="#" class="hover-link" data-title="Modulos de Oficinas"><span>Modulos de Oficinas</span></a></li>
+                            <li><a href="#" class="hover-link" data-title="Modulos de Bodega"><span>Modulos de Bodega</span></a></li>
+                            <li><a href="#" class="hover-link" data-title="Modulos de Comedores"><span>Modulos de Comedores</span></a></li>
+                            <li><a href="#" class="hover-link" data-title="Modulos de Casas de Cambios"><span>Modulos de Casas de  Cambios</span></a></li>
+                            <li><a href="#" class="hover-link" data-title="Modulos de baños temporales"><span></span>Modulos de baños temporales</a></li>
+                            <li><a href="#" class="hover-link" data-title="Modulos de Duchas Temporales"><span>Modulos de Duchas Temporales</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div><!--------------Que Ofrecemos END------------------->
+            <div class="col-xl-2 col-lg-4 col-12 item">
+                <div class="footer-item">
+                    <p class="footer-item-heading">Nuestros Contactos</p>
+                    <ul class="footer-contacts">
+                        <li>
+                            <i class="material-icons md-22">location_on</i>
+                            <div class="footer-contact-info">
+                                Av. , Graneros 2880000, Chile
+                            </div>
+                        </li>
+                        <li>
+                            <i class="material-icons md-22 footer-contact-tel">smartphone</i>
+                            <div class="footer-contact-info">
+                                <a href="#" class="formingHrefTel">+56998765432</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="material-icons md-22 footer-contact-email">email</i>
+                            <div class="footer-contact-info">
+                                <a href="mailto:contacto@cfmodular.cl" >contacto@cfmodular.cl</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</footer>
+</main>
+
+
 	
 	
 	
 	<!---------------JavaScript------------------->
-	<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
-	<script type="text/javascript" src="js/MooTools-Core-1.6.0.js"></script>
-	<script type="text/javascript" src="js/anime.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/lozad/lozad.min.js"></script>
+	<script type="text/javascript" src="libs/device/device.js"></script>
+	<script type="text/javascript" src="libs/ScrollToFixed/jquery-scrolltofixed-min.js"></script>
+	<script type="text/javascript" src="libs/spincrement/jquery.spincrement.min.js"></script>
+	<script type="text/javascript" src="libs/jquery-validation-1.19.3/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/favicons.js"></script>
 	<script type="text/javascript" src="js/sweetalert2.all.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
 	<!--------------------------------------------->
 </body>
 </html>
