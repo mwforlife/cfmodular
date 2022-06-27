@@ -30,6 +30,8 @@ Version: 1.0
     --el-border-radius-min: 6px;
     --el-box-shadow: 2px 4px 20px 1px rgba(45, 45, 45, 0.13);
     --header-box-shadow: 0px 0px 14px 0px rgba(77, 82, 94, 0.15);
+    --wave-top: url('../img/waves/wave-contact-top.svg');
+    --wave-bottom: url('../img/waves/wave-contact-bottom.svg');
 }
 
 /* === CSS Table Of Content
@@ -123,6 +125,8 @@ Version: 1.0
 *:before, *:after {
     box-sizing: border-box;
 }
+
+
 
 html {
     font-size: var(--font-size);
@@ -3722,11 +3726,43 @@ $media-container-width: var(--media-container-width);
     }
 
 }*/
+/*Preloader*/
+.preloader{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(58, 58, 58, 0.9);
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subpreloader{
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    border-left: none;
+    border-top: none;
+    animation: girar linear  1s infinite;
+}
+
+@keyframes girar{
+        from{
+            transform: rotate(0deg);
+            }
+        to{
+            transform: rotate(360deg);
+        }
+}
 
 /*Services*/
 .heading-center{
     margin-bottom: 0;
     text-decoration: underline;
+}
+.services{
+    position: relative;
 }
 .service__item{
     width: 100%;
@@ -3739,7 +3775,6 @@ $media-container-width: var(--media-container-width);
 }
 .service__img{
     min-width: 720px;
-    width: 720px;
     height: 342px;
     border-top-left-radius: 120px;
     border-bottom-right-radius: 100px;
@@ -3758,33 +3793,107 @@ $media-container-width: var(--media-container-width);
     margin: 0;
     border-left: 2px solid #000;
 }
-/**************************/
-/*Contact Form*/
-.wave-contact:first-child{
-    position: relative;
-    margin-bottom: -200px;
+
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-size: 100% ;
+}
+.wave-bottom{
+    left: 0;
+    border: 0;
+    background-image: var(--wave-bottom);
+    background-repeat: no-repeat;
 }
 
-.wave-contact:last-child{
-    margin-top: -100px;
+.wave-top{
+    left: 0;
+    top: 0;
+    background-image: var(--wave-top);
+    background-repeat: no-repeat;
 }
-.wave-contact{
-    width: 100%;
-}
-.wave-contact img{
-    width: 100% !important;
-}
+/**************************/
+/*Contact Form*/
 .contact__item{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .contact__img{
     width: 500px;
 }
 .contact{
-    margin-bottom: 0px;
-    padding-bottom: 0;
+    position: relative;
+    --wave-top: url("../img/waves/wave-service-top.svg");
+    --wave-bottom: url("../img/waves/wave-service-bottom.svg");
+}
+
+@media  (max-width:1200px) {
+    .service__item{
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+    
+    .service__img{
+        width: 90% !important;
+        min-width: 90% !important;
+        display: block;
+        margin: 0;
+    }
+    .service__item--instalaciones{
+        align-items: center;
+        text-align: center;
+    }
+    
+    .service__item--comedores{
+        flex-direction: column-reverse;
+    }
+    .service__item--casacambio{
+        flex-direction: column-reverse;
+    }
+    .service__title{
+        border-left: 0px;
+        margin: 0;
+    }
+    .service__subtitle{
+        border: none;
+    }
+    .service__text{
+        margin-bottom: 0px;
+        max-width: 620px;
+    }
+}
+
+@media  (max-width:1000px) {
+    .contact__item{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .contact__img{
+        width: 300px;
+        margin-bottom: 40px;
+    }
+    .contact__title{
+        text-align: center;
+    }
+        
+}
+
+@media (max-width:720px){
+    .intro-content{
+        text-align: center;
+    }
+    .landing{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .landing .wrap-btn{
+        justify-content: center;
+    }
 }

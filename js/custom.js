@@ -93,7 +93,7 @@
 
 		appendBtnTop: function() {
 
-			$("body").append('<div class="btn-top"><svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg></div>');
+			$("body").append('<div class="btn-top"><svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></div>');
 
 		},
 

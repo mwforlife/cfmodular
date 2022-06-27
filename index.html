@@ -8,10 +8,31 @@
 	<meta name="description" content="Empresa de contrucción modulares, Fabricación, e instalación contrucciones Módulos. Instalaciones de Faenas, Oficinas, Bodegas, Comedores, Casas de Cambio, Baños. Comedores, Oficinas temporales. Baños y duchas temporales.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="CF Construcción Modular">
+    <meta name="description" content="Empresa de construcción modulares, Fabricación, e instalación construcciones Módulos. Instalaciones de Faenas, Oficinas, Bodegas, Comedores, Casas de Cambio, Baños. Comedores, Oficinas temporales. Baños y duchas temporales.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://cfmodular.cl/">
+    <meta property="og:title" content="CF Construcción Modular">
+    <meta property="og:description" content="Empresa de construcción modulares, Fabricación, e instalación construcciones Módulos. Instalaciones de Faenas, Oficinas, Bodegas, Comedores, Casas de Cambio, Baños. Comedores, Oficinas temporales. Baños y duchas temporales.">
+    <meta property="og:image" content="https://cfmodular.cl/prototipo/img/fondo/fondo1.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://cfmodular.cl/">
+    <meta property="twitter:title" content="CF Construcción Modular">
+    <meta property="twitter:description" content="Empresa de construcción modulares, Fabricación, e instalación construcciones Módulos. Instalaciones de Faenas, Oficinas, Bodegas, Comedores, Casas de Cambio, Baños. Comedores, Oficinas temporales. Baños y duchas temporales.">
+    <meta property="twitter:image" content="https://cfmodular.cl/prototipo/img/fondo/fondo1.jpeg">
+
+
+
 	<!-----------------StyleSheet----------------------------->
      <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/libs.css"/>
       <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/toastify.css"/>
       
       <!-------------Fonts-------------->
       <link rel="preload" href="fonts/istok-web-v15-latin/istok-web-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -29,22 +50,24 @@
 	
 	<style>
         .contact__link{
-            box-shadow: 1px 1px 5px 2px;
-            border-radius: 50%;
-            border-bottom-left-radius: 0px;
             padding: 0;
             margin: 0;
             position: fixed;
-            bottom: 20px;
+            bottom: 60px;
             right: 20px;
             z-index:999; 
+            transform: rotate(-15deg)
         }
         .contact__link img{
             margin: 0;
-            width: 100px
+            width: 75px;
         }
+        
         .contact__link:hover{
             animation: girar 3s ease-out;
+            box-shadow: 1px 1px 5px 2px;
+            border-radius: 50%;
+            border-bottom-left-radius: 0px;
         }
         @keyframes girar{
             from{
@@ -54,11 +77,21 @@
                 transform: rotate(360deg)
             }
         }
+        
     </style>
 	
 </head>
 
 <body id="top">
+
+<!--Preloader-->
+<div class="preloader">
+    <div class="subpreloader">
+        
+    </div>
+</div>
+<!---------->
+
 <!-----Link Whatsapp------->
 	<a href="https://wa.me/56989292540?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio" target="_blank" class="contact__link">
             <img src="img/logo/whatsapp.png" width="150" alt="">
@@ -147,15 +180,15 @@
 
 <!--------Begin Intro--------->
 <div id="inicio" class="section-bgc-intro">
-    <div class="intro-slider" style="background-image: url(img/fondo/fondo3.jpeg); background-repeat: no-repeat; background-position: right;;">
-        <div class="intro-item" style="background-color: rgba(0, 0, 0, 0.1">
+    <div class="intro-slider" style="background-image: url(img/fondo/fondo1.jpeg); background-repeat: no-repeat; background-position: right; background-size: 100% 160%;">
+        <div class="intro-item" style="background-color: rgba(255, 255, 254, 0.4)">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col landing">
                         <div class="intro-content">
                             <div class="section-heading shm-none">
                                 <h1><img src="img/logo/logo__completo.png" alt=""></h1>
-                                <p class="section-desc">
+                                <p class="section-desc text-dark">
                                     Empresa de contrucción modulares, Fabricación, e instalación contrucciones Módulos. Instalaciones de Faenas, Oficinas, Bodegas, Comedores, Casas de Cambio, Baños. Comedores, Oficinas temporales. Baños y duchas temporales.
                                 </p>
                             </div>
@@ -187,7 +220,7 @@
                 </div>
             </div>
             <div class="col-lg-12 col-md-12 col-xl-12">
-                    <div class="service__item">
+                    <div class="service__item service__item--instalaciones">
                            <div class="service__text">
                             <h2 class="service__title">Instalaciones de Faenas</h2>
                             <h4 class="service__subtitle">Oficinas, Bodegas, Comedores, Casa de Cambio, Baños</h4>
@@ -196,7 +229,7 @@
                     </div>
                     
                     
-                    <div class="service__item">
+                    <div class="service__item service__item--comedores">
                             <img src="img/servicios/Comedor-2.jpg" alt="" class="service__img">
                            <div class="service__text">
                             <h2 class="service__title">Comedores</h2>
@@ -206,7 +239,7 @@
                     </div>
                     
                     
-                    <div class="service__item">
+                    <div class="service__item service__item--oficinas">
                            <div class="service__text">
                             <h2 class="service__title">Oficinas</h2>
                             <h4 class="service__subtitle">Temporales</h4>
@@ -216,7 +249,7 @@
                     </div>
                     
                     
-                    <div class="service__item">
+                    <div class="service__item service__item--casacambio">
                             <img src="img/servicios/Instalaciones%20de%20Faena-5.jpg" alt="" class="service__img">
                            <div class="service__text">
                             <h2 class="service__title">Casas de Cambio</h2>
@@ -226,7 +259,7 @@
                     </div>
                     
                     
-                    <div class="service__item">
+                    <div class="service__item service__item--duchas">
                            <div class="service__text">
                             <h2 class="service__title">Baños y Duchas</h2>
                             <h4 class="service__subtitle">Temporales</h4>
@@ -238,13 +271,13 @@
                 </div>
             </div>
     </div>
+    
+    <div class="wave wave-top"></div>
+    <div class="wave wave-bottom"></div>
 </section>
 <!-----------END Services---------------------->
 <!-----------Begin Contact---------------------->
 <section id="contacto" class="section contact">
-   <div class="wave-contact">
-       <img src="img/waves/wave-contact-top.svg" alt="">
-   </div>
     <div class="container">
         <div class="row">
             <div style="margin-bottom: 50px;" class="col-12">
@@ -256,7 +289,7 @@
             <div class="contact__item">
                 <img src="img/Illustrations/email-us.svg" alt="" class="contact__img">
                 <div class="contact__form">
-                    <form action="">
+                    <form action="" id="ContactForm" name="ContactForm">
                         <div class="row">
                             <div class="col">
                                 <h3 class="contact__title">Formulario de Contacto</h3>
@@ -266,26 +299,26 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <label for="">Nombre:<span class="text-danger">*</span></label>
-                                <input type="text" name="nombre" required placeholder="Ingrese su nombre Completo" class="form-control">
+                                <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre Completo" class="form-control">
                             </div>
                             <div class="col-md-12">
                                 <label for="">Correo Electronico<span class="text-danger">*</span></label>
-                                <input type="email" name="email" required placeholder="Ingrese su Correo electronico" class="form-control">
+                                <input type="email" name="email" id="email" required placeholder="Ingrese su Correo electronico" class="form-control">
                             </div>
                             <div class="col-md-6">
                                 <label for="">Numero de Contacto<span class="text-danger">*</span></label>
-                                <input type="text" name="phone" required placeholder="Ingrese su Numero de Contacto" class="form-control">
+                                <input type="text" name="phone" id="phone" required placeholder="Ingrese su Numero de Contacto" class="form-control" min="911111111" max="999999999">
                             </div>
                             <div class="col-md-6">
-                                <label for="">Asunto</label>
-                                <input type="text" placeholder="Ingrese el Asunto de su mensaje" class="form-control">
+                                <label for="">Asunto<span class="text-danger">*</span></label>
+                                <input type="text" name="asunto" id="asunto" placeholder="Ingrese el Asunto de su mensaje" required class="form-control">
                             </div>
                             <div class="col-md-12">
                                 <label for="">Mensaje<span class="text-danger">*</span></label>
-                                <textarea name="" id="" cols="30" rows="10" maxlength="200" class="form-control"></textarea>
+                                <textarea name="mensaje" id="mensaje" cols="30" rows="10" maxlength="200" class="form-control"></textarea>
                             </div>
                             <div class="col-md-12 d-flex justify-content-end">
-                                <button class="btn btn-with-icon btn-small ripple">
+                                <button type="submit" class="btn btn-with-icon btn-small ripple">
                                     <span>Contactanos</span>
                                     <svg class="btn-icon-right" viewBox="0 0 13 9" width="12" height="9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>
                             </div>
@@ -295,9 +328,8 @@
             </div>
         </div>
     </div>
-    <div class="wave-contact">
-       <img src="img/waves/wave-contact-bottom.svg" alt="">
-   </div>
+    <div class="wave wave-top"></div>
+    <div class="wave wave-bottom"></div>
 </section>
 <!----------End Contact----------------------->
 <footer class="footer">
@@ -354,15 +386,9 @@
                     <p class="footer-item-heading">Nuestros Contactos</p>
                     <ul class="footer-contacts">
                         <li>
-                            <i class="material-icons md-22">location_on</i>
-                            <div class="footer-contact-info">
-                                Av. , Graneros 2880000, Chile
-                            </div>
-                        </li>
-                        <li>
                             <i class="material-icons md-22 footer-contact-tel">smartphone</i>
                             <div class="footer-contact-info">
-                                <a href="#" class="formingHrefTel">+56998765432</a>
+                                <a href="tel:56989292540" class="formingHrefTel">+56989292540</a>
                             </div>
                         </li>
                         <li>
@@ -386,6 +412,7 @@
 	
 	<!---------------JavaScript------------------->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
 	<script type="text/javascript" src="libs/lozad/lozad.min.js"></script>
 	<script type="text/javascript" src="libs/device/device.js"></script>
 	<script type="text/javascript" src="libs/ScrollToFixed/jquery-scrolltofixed-min.js"></script>
@@ -394,6 +421,14 @@
 	<script type="text/javascript" src="js/favicons.js"></script>
 	<script type="text/javascript" src="js/sweetalert2.all.min.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/toastify.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#phone").mask("999999999");
+        });
+    </script>
 	<!--------------------------------------------->
 </body>
 </html>
